@@ -1,0 +1,168 @@
+{
+    "theme": "Awwwards-Level Playful Neo-Brutalism (Lucu but Premium)",
+    "design_philosophy": "Archetype 3: Pastel & Soft mixed with Neo-Brutalist contrast. Think butter yellow and pale mint paired with thick, hard black borders and dropped solid shadows. It must feel cute ('lucu') and highly interactive but stay professional and Awwwards-worthy.",
+    "typography": {
+        "headings": {
+            "font": "Fredoka",
+            "style": "Playful, rounded, tracking-tighter, very bold",
+            "install": "@fontsource/fredoka"
+        },
+        "body": {
+            "font": "Outfit",
+            "style": "Clean, highly readable, tracking-normal",
+            "install": "@fontsource/outfit"
+        }
+    },
+    "colors": {
+        "light": {
+            "background": "#FFFDE7",
+            "foreground": "#1E1E24",
+            "primary": "#FF6B6B",
+            "secondary": "#4ECDC4",
+            "accent": "#FFD93D",
+            "border": "#1E1E24",
+            "card": "#FFFFFF"
+        },
+        "dark": {
+            "background": "#1E1E24",
+            "foreground": "#FFFDE7",
+            "primary": "#FF8787",
+            "secondary": "#6EE7B7",
+            "accent": "#FDE047",
+            "border": "#FFFDE7",
+            "card": "#2A2A35"
+        }
+    },
+    "visual_enhancers": {
+        "3d_hero": {
+            "library": "@splinetool/react-spline",
+            "instruction": "Embed a playful 3D Spline scene. Use this public Spline URL for a cute character that follows the mouse: 'https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode'. Wrap it in a Suspense component."
+        },
+        "motion": {
+            "library": "framer-motion",
+            "instruction": "Use framer-motion for character-by-character masked text reveals in the Hero. Use whileInView staggered list reveals for timelines and project cards. Interactive hover states: slight rotation (-2deg to 2deg) and translation (-translate-y-1) with solid dropped shadow expanding."
+        },
+        "scrolling": {
+            "library": "@studio-freight/lenis",
+            "instruction": "MANDATORY for Awwwards-feel smooth scrolling."
+        },
+        "marquee": {
+            "library": "react-fast-marquee",
+            "instruction": "Use for the Organization Experience section. Large, outlined text moving continuously."
+        }
+    },
+    "components": {
+        "language_toggle": "A pill-shaped floating toggle fixed at the top right, switching between 'ID' and 'EN'. Uses Framer Motion for a sliding pill indicator.",
+        "hero": "Split layout or layered layout. Massive text 'Hello, I'm [Name]' / 'Halo, Saya [Name]' overlapping the Spline 3D canvas. The 3D character follows the mouse.",
+        "profile": "Asymmetric bento box with a playful portrait, overlapping shapes, and a quick intro.",
+        "timeline": "For Education and Work. Instead of boring straight lines, use a wavy SVG path as the timeline, or stepped Neo-Brutalist cards.",
+        "project_gallery": {
+            "filters": "4 pill-shaped buttons: Web & Mobile, AI Development, Tech Writer, Quality Assurance. Active state has a solid block shadow.",
+            "layout": "Grid of cards. Each card has a thumbnail, title, tags, and a 'Show More' button.",
+            "modal": "Use Shadcn 'Dialog' but heavily restyle it to match the Neo-Brutalist theme (thick borders, solid background colors, no pure glassmorphism). The modal contains rich documentation, explanation, and interactive mock images."
+        },
+        "organization": "A massive scrolling marquee of org names/roles with SVGs or asterisks as separators.",
+        "contact": "Playful form with Shadcn Input/Textarea but styled with hard borders. Submit button has an intense click animation."
+    },
+    "content_strategy_bilingual": {
+        "note": "Main agent MUST implement a React Context for Language (ID/EN) and provide these translations.",
+        "hero_title_en": "Crafting cute, interactive, & premium digital experiences.",
+        "hero_title_id": "Menciptakan pengalaman digital yang lucu, interaktif, & premium.",
+        "about_title_en": "Who am I?",
+        "about_title_id": "Siapa Saya?",
+        "education_title_en": "Education Journey",
+        "education_title_id": "Latar Belakang Pendidikan",
+        "work_title_en": "Work & Internship",
+        "work_title_id": "Pengalaman Kerja & Intern",
+        "projects_title_en": "Project Gallery",
+        "projects_title_id": "Galeri Projek",
+        "org_title_en": "Organization Experience",
+        "org_title_id": "Pengalaman Organisasi",
+        "contact_title_en": "Let's Talk!",
+        "contact_title_id": "Mari Berbincang!"
+    },
+    "image_urls": {
+        "profile": [
+            {
+                "url": "https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHw0fHxjdXRlJTIwcG9ydHJhaXQlMjBwZXJzb24lMjBzbWlsaW5nJTIwYnJpZ2h0bHl8ZW58MHx8fHwxNzg3NDExOTUyfDA&ixlib=rb-4.1.0&q=85",
+                "category": "profile",
+                "description": "Cute portrait for the 'About Me' section"
+            }
+        ],
+        "web_mobile": [
+            {
+                "url": "https://images.unsplash.com/photo-1763718528755-4bca23f82ac3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB3ZWIlMjBhcHAlMjBkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3ODc0MTE5NTJ8MA&ixlib=rb-4.1.0&q=85",
+                "category": "project_web",
+                "description": "Dashboard Web App Mockup"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHAlMjBkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3ODc0MTE5NTJ8MA&ixlib=rb-4.1.0&q=85",
+                "category": "project_web",
+                "description": "Analytics Web App Mockup"
+            }
+        ],
+        "ai_development": [
+            {
+                "url": "https://images.pexels.com/photos/17483873/pexels-photo-17483873.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "category": "project_ai",
+                "description": "Abstract AI neural network"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxhaSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3ODc0MTE5NTJ8MA&ixlib=rb-4.1.0&q=85",
+                "category": "project_ai",
+                "description": "Playful 3D AI Text"
+            }
+        ],
+        "technical_writing": [
+            {
+                "url": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "category": "project_documentation",
+                "description": "Code and documentation layout"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1607706189992-eae578626c86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHx0ZWNobmljYWwlMjB3cml0aW5nJTIwZG9jdW1lbnRhdGlvbiUyMGNvZGV8ZW58MHx8fHwxNzg3NDExOTUyfDA&ixlib=rb-4.1.0&q=85",
+                "category": "project_documentation",
+                "description": "Technical code snippet documentation"
+            }
+        ],
+        "quality_assurance": [
+            {
+                "url": "https://images.pexels.com/photos/34804009/pexels-photo-34804009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "category": "project_qa",
+                "description": "QA Testing code screen with cute plushie"
+            },
+            {
+                "url": "https://images.pexels.com/photos/34804011/pexels-photo-34804011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "category": "project_qa",
+                "description": "Close up QA Code testing with cute plushie"
+            }
+        ]
+    },
+    "accessibility_and_testing": {
+        "data_testid": "MANDATORY. Add descriptive `data-testid` to all interactive buttons, modals, language toggles, and project cards (e.g., `data-testid='lang-toggle-id'`, `data-testid='project-modal-show-more'`).",
+        "contrast": "Ensure text inside Neo-Brutalist cards meets 4.5:1 ratio. Dark borders must be used when putting pastel colors side by side."
+    },
+    "instructions_to_main_agent": [
+        "Install the required libraries: framer-motion, @splinetool/react-spline, @studio-freight/lenis, react-fast-marquee, lucide-react.",
+        "Implement Lenis smooth scrolling in a global wrapper.",
+        "Build a LanguageProvider (Context) for ID/EN toggle.",
+        "Implement the Spline 3D object in the Hero section using the provided URL.",
+        "Build the 4 category buttons as a client-side filter state for the projects gallery. The 'Show More' buttons MUST open a Shadcn Dialog containing rich text and images.",
+        "Apply Neo-Brutalist / 'Lucu' CSS classes globally in Tailwind (e.g., `border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-xl`). Ensure there is generous padding (`p-6` or `p-8`) inside cards.",
+        "DO NOT use transparent backgrounds for the sticky header to prevent text collision. Use a solid pastel background with a hard bottom border.",
+        "Ensure the design remains fully responsive (stack the grid on mobile).",
+        "DO NOT output TSX if the project uses JS."
+    ],
+    "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+        "Avoid generic, 'on distribution' outputs (the 'AI slop' aesthetic). Make creative, distinctive frontends.",
+        "Do not use dark colors as gradients.",
+        "Do not make generic centered layouts. Use asymmetrical, tension-creating grids.",
+        "Use glass-morphism cautiously (only if it fits the theme, here solid colors with hard borders are preferred).",
+        "DO NOT apply `transition: all`. Use specific transitions like `transition: transform 0.2s ease`.",
+        "DO NOT add `.App { text-align: center; }`.",
+        "Use pill-shaped or sharp modern buttons with micro-animations.",
+        "NEVER use emojis as icons (no 🤖🧠💭). Use lucide-react.",
+        "Use 2-3x more spacing than feels comfortable.",
+        "ALWAYS add `data-testid` to interactive elements."
+    ]
+}
