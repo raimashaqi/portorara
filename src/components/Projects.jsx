@@ -4,7 +4,7 @@ import {
   X, ExternalLink, Github, Check, Globe, Brain, PenLine, Bug,
   ArrowRight, Images, Calendar, User, FileText, ChevronLeft, ChevronRight
 } from "lucide-react";
-import SectionHeading from "./Sectionheading";
+import SectionHeading from "./SectionHeading";
 import { useLanguage } from "../context/LanguageContext";
 import { projectCategories, projects } from "../data/content";
 import { stopScroll, startScroll } from "../lib/scroll";

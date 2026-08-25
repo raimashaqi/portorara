@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Smile, Swords } from "lucide-react";
-import SectionHeading from "./Sectionheading";
+import SectionHeading from "./SectionHeading";
 import { useLanguage } from "../context/LanguageContext";
 import { profileImage, skills } from "../data/content";
 

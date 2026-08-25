@@ -1,4 +1,4 @@
-import SectionHeading from "./Sectionheading";
+import SectionHeading from "./SectionHeading";
 import Timeline from "./Timeline";
 import { useLanguage } from "../context/LanguageContext";
 import eduImg from "../assets/pendidikan/image1.jpeg";

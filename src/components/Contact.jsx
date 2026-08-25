@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram, PartyPopper } from "lucide-react";
-import SectionHeading from "./Sectionheading";
+import SectionHeading from "./SectionHeading";
 import { useLanguage } from "../context/LanguageContext";
 
 const Contact = () => {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { Asterisk, Users } from "lucide-react";
-import SectionHeading from "./Sectionheading";
+import SectionHeading from "./SectionHeading";
 import { useLanguage } from "../context/LanguageContext";
 
 const Organization = () => {
